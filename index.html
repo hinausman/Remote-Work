@@ -1,17 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navigation bar</title>
 </head>
 
 <body>
-    <h1>hello</h1>
+
+    <header>
+        <div id="logo"><a href="/"><img src="images/logo.svg"></a></div>
+        <div id="topLinks">
+            <nav>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Features
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="/images/icon-todo.svg"><span class="dropdown-content-span"> ToDo
+                                        List</span></a>
+                                <a href="#"><img src="/images/icon-calendar.svg"><span
+                                        class="dropdown-content-span">Calendar</span></a>
+                                <a href="#"><img src="/images/icon-reminders.svg"><span
+                                        class="dropdown-content-span">Reminder</span></a>
+                                <a href="#"><img src="/images/icon-planning.svg"><span
+                                        class="dropdown-content-span">Planning</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Company
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">History</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="test"><a href="#">Career</a></div>
+                    </li>
+                    <li>
+                        <div class="test">
+                            <a href="#">About</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="rightLinks">
+            <nav>
+                <ul>
+                    <li id="login"><a href="#">Login</a></li>
+                    <li id="signup"><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header for mobile version starting -->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li id="login"><a href="/login">Login</a></li>
+                <li id="signup"><a href="/signup">Register</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- main content area is starting from here -->
+    <div class="mainContainer">
+
+        <div class="leftColumn">
+            <div class="mainHeading">
+                <h1>Make</h1>
+                <h1>remote work</h1>
+            </div>
+            <div class="mainText">
+                <p>
+                    Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.
+
+
+                </p>
+            </div>
+
+            <div class="mainButton">
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="bottomStyle">
+                <ul>
+                    <li>
+                        <img src="/images/client-databiz.svg">
+
+                    </li>
+                    <li>
+                        <img src="/images/client-audiophile.svg" </li>
+                    <li><img src="/images/client-meet.svg" </li>
+                    <li><img src="/images/client-maker.svg" </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="rightColumn">
+
+            <img src="/images/image-hero-desktop.png" width="500px" height="600px" />
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
+        <footer> -->
+
+
 </body>
+<script src="script.js"></script>
+<!-- comment -->
 
 </html>
